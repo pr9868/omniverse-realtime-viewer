@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OV Realtime Viewer</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+             background: #1a1a1a; color: #e0e0e0; height: 100vh; overflow: hidden; }
+      #root { height: 100vh; }
+    </style>
+  </head>
+  <body>
+    <!--
+      AppStreamer must load as a plain <script> BEFORE React mounts.
+      It is an old-school global SDK — it adds window.AppStreamer.
+      Vite copies everything in public/ verbatim to dist/, so this path
+      works both in dev (localhost:5173) and in production (EC2).
+    -->
+    <script src="/omniverse-webrtc-streaming-library.js"></script>
+
+    <!-- React mounts here -->
+    <div id="root"></div>
+
+    <!-- Vite entry point — type="module" defers execution until after the DOM is ready -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+# Python server dependencies
+# Install via scripts/setup.sh (recommended) or manually into a virtualenv
+ovrtx>=0.3.0
+ovstream
+warp-lang>=1.0.0
+numpy
+aiohttp
