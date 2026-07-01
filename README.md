@@ -4,7 +4,7 @@ A browser-based USD scene viewer powered by NVIDIA Omniverse's `ovrtx` renderer 
 
 ![Demo screenshot](docs/demo-screenshot.png)
 
-[▶ Demo video](https://github.com/pr9868/omniverse-realtime-viewer/releases) — see Releases for the full demo video
+[▶ Demo video](https://github.com/pr9868/omniverse-realtime-viewer/releases/download/v1.0.0/demo.mov)
 
 ---
 
