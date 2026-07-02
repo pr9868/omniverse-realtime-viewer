@@ -18,7 +18,10 @@ frontend-react/.npmrc
 logs/
 *.log
 
+# Large media — keep locally, upload as GitHub Release assets instead
+docs/*.mov
+docs/*.mp4
+
 # OS
 .DS_Store
 Thumbs.db
-*.mov
